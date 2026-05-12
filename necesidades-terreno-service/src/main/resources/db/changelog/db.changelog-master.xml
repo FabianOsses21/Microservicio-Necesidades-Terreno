@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="001-necesidades" author="donaton">
+
+        <createTable tableName="necesidad_terreno">
+
+            <column
+                name="id"
+                type="BIGINT"
+                autoIncrement="true">
+
+                <constraints
+                    primaryKey="true"
+                    nullable="false"/>
+            </column>
+
+            <column
+                name="zona"
+                type="VARCHAR(120)"/>
+
+            <column
+                name="tipo_recurso"
+                type="VARCHAR(120)"/>
+
+            <column
+                name="cantidad_solicitada"
+                type="INT"/>
+
+            <column
+                name="prioridad"
+                type="VARCHAR(40)"/>
+
+            <column
+                name="estado"
+                type="VARCHAR(40)"/>
+
+            <column
+                name="usuario_reporta_id"
+                type="BIGINT"/>
+
+            <column
+                name="fecha_registro"
+                type="DATETIME"/>
+
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>

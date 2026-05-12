@@ -1,0 +1,5 @@
+CREATE DATABASE IF NOT EXISTS donaton_usuarios;
+CREATE DATABASE IF NOT EXISTS donaton_donaciones;
+CREATE DATABASE IF NOT EXISTS donaton_necesidades;
+CREATE DATABASE IF NOT EXISTS donaton_logistica;
+CREATE DATABASE IF NOT EXISTS donaton_envios;
